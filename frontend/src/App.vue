@@ -1,68 +1,58 @@
+
+
 <template>
-<div>
-  <b-navbar toggleable="md" type="dark" variant="info">
-
-    <b-navbar-toggle target="nav_collapse"></b-navbar-toggle>
-
-    <b-navbar-brand href="#">NavBar</b-navbar-brand>
-
-    <b-collapse is-nav id="nav_collapse">
-
-      <b-navbar-nav>
-        <b-nav-item href="#">Link</b-nav-item>
-        <b-nav-item href="#" disabled>Disabled</b-nav-item>
-      </b-navbar-nav>
-
-      <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
-
-        <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" type="text" placeholder="Search"/>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit">Search</b-button>
-        </b-nav-form>
-
-        <b-nav-item-dropdown text="Lang" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">ES</b-dropdown-item>
-          <b-dropdown-item href="#">RU</b-dropdown-item>
-          <b-dropdown-item href="#">FA</b-dropdown-item>
-        </b-nav-item-dropdown>
-
-        <b-nav-item-dropdown right>
-          <!-- Using button-content slot -->
-          <template slot="button-content">
-            <em>User</em>
-          </template>
-          <b-dropdown-item href="#">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">Signout</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>
-
-    </b-collapse>
-  </b-navbar>
-</div>
+  <div>
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import Vue from 'vue';
-import BootstrapVue from 'bootstrap-vue';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+  /* eslint-disable */
+  import Vue from 'vue';
+  import BootstrapVue from 'bootstrap-vue';
+  import 'bootstrap/dist/css/bootstrap.css';
+  import 'bootstrap-vue/dist/bootstrap-vue.css';
+  import NavBar from './components/NavBar.vue'
+  Vue.use(BootstrapVue);
+  import axios from 'axios';
+  export default {
+    name: 'App'
+  };
 
-Vue.use(BootstrapVue);
-
-export default {
-  name: 'App',
-};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+  #__BVID__6:focus, .navbar-nav.ml-auto, .form-inline{
+    width: 80% !important;
+  }
+
+  #__BVID__6:hover{
+    width: 80% !important;
+    border-bottom: 3px solid orange;
+  }
+
+  #__BVID__6:focus{
+    width: 80% !important;
+    border: 3px solid orange;
+  }
+
+  .navbar-dark:hover .navbar-brand:hover{
+    border-bottom: 3px solid orange;
+  }
+
+  a:hover{
+    text-decoration: none !important;
+  }
+
+
 </style>
+

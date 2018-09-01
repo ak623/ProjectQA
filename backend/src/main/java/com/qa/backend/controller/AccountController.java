@@ -8,11 +8,14 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
+import java.util.logging.Logger;
 
 @RestController
 @RequestMapping("/account")
 @CrossOrigin
 public class AccountController {
+
+    Logger logger = Logger.getLogger(AccountController.class.getName());
 
     @Autowired
     private AccountRepository accountRepository;
@@ -34,6 +37,13 @@ public class AccountController {
             return optAccount.get();
         } return null;
     }
+
+    //Read
+    @RequestMapping(value = "/allAccounts")
+    public Iterable<Account> readAllAccount(){
+        return  accountRepository.findAll();
+    }
+
 
     //Update
     @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
