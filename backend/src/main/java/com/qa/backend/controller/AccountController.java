@@ -24,7 +24,7 @@ public class AccountController {
 //java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'accountController' method
 
     //Create
-    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/add", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void create(@RequestBody Account account){
         accountRepository.save(account);
     }
@@ -46,13 +46,13 @@ public class AccountController {
 
 
     //Update
-    @RequestMapping(method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/update", method = RequestMethod.PUT, consumes = MediaType.APPLICATION_JSON_VALUE)
     public void update(@RequestBody Account account){
         accountRepository.save(account);
     }
 
     //Delete
-    @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
+    @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
     public void delete(@PathVariable int id){
         accountRepository.deleteById(id);
     }

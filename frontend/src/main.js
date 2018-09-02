@@ -10,3 +10,9 @@ new Vue({
   router,
   render: h => h(App),
 });
+
+var vm = new Vue({
+  data: {
+    a: 1
+  }
+})
