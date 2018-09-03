@@ -3,7 +3,7 @@
   <!--use this to make it look better-->
   <!--https://codepen.io/see8ch/pen/KpLrd-->
   <div>
-    <NavBar></NavBar>
+    <!--<NavBar></NavBar>-->
   <div id="form">
 
       <div class="well">
@@ -28,7 +28,12 @@
       </div>
 
       <button class="btn" @click="addAccount">Add Account</button>
-
+  <div class="error" v-if="errors.length">
+    <b>Please correct the following error(s):</b>
+    <ul>
+      <li v-for="error in errors">{{ error }}</li>
+    </ul>
+  </div>
 
   </div>
   </div>
@@ -37,6 +42,7 @@
 <script>
   import axios from 'axios';
   import NavBar from './NavBar.vue'
+  import Vue from 'vue';
   export default {
     name: 'InsertAccount',
     components: {
@@ -45,28 +51,47 @@
     data() {
       return {
         Account: { id: '', firstName: '', secondName: '', accountNumber: '' },
+        errors: [],
       }
     }, methods: {
       addAccount() {
-        let newAccount = {
-          id: this.Account.id,
-          firstName: this.Account.firstName,
-          secondName: this.Account.secondName,
-          accountNumber: this.Account.accountNumber
+        this.errors = [];
+
+        if (!this.Account.firstName) {
+          this.errors.push('Name required.');
         }
-        console.log(newAccount);
-        axios.post('http://localhost:8080/account/add', newAccount)
-          .then((response) => {
-            // response.header("Access-Control-Allow-Origin", "*");
-            this.thisresponse = response.data;
-            console.log(response);
-          })
-          .catch((error) => {
-            console.log(error);
-          });
+        if (!this.Account.secondName) {
+          this.errors.push('Second Name required.');
+        }
+        if (!this.Account.accountNumber) {
+          this.errors.push('Account Number required.');
+        }
+        if (!this.Account.id) {
+          this.errors.push('ID required.');
+        }
+
+        if (this.Account.firstName && this.Account.id && this.Account.secondName && this.Account.accountNumber){
+          let newAccount = {
+            id: this.Account.id,
+            firstName: this.Account.firstName,
+            secondName: this.Account.secondName,
+            accountNumber: this.Account.accountNumber
+          }
+          console.log(newAccount);
+          axios.post('http://localhost:8080/account/add', newAccount)
+            .then((response) => {
+              this.thisresponse = response.data;
+              console.log(response);
+              window.location.href = '/ViewAccounts';
+            })
+            .catch((error) => {
+              console.log(error);
+            });
+        }
       }
     }
   }
+
 </script>
 
 <style scoped>
@@ -75,13 +100,11 @@
   }
   #form{
     margin: auto;
-    width: 70% !important;
+    width: 100% !important;
     background-color: rgb(219, 224, 226);
     padding-bottom: 50px;
     border-top: 15px solid #313A3D;
     padding-top: 50px;
-    margin-top: 50px;
-    max-width: 700px;
   }
 
   .form-group {
@@ -112,5 +135,13 @@
     padding: 10px;
     text-align: center;
     margin-bottom: 0px;
+  }
+
+  .error{
+    width: 70%;
+    display: block;
+    margin-top: 25px !important;
+    margin: auto;
+    color: #F44336;
   }
 </style>

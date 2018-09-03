@@ -14,8 +14,9 @@
 
         <b-collapse is-nav id="nav_collapse">
 
-          <b-navbar-nav>
+          <b-navbar-nav style="color: black !important;">
             <b-navbar-brand href="#"><router-link to="/" style="color: black">Home</router-link></b-navbar-brand>
+            <b-navbar-brand href="#"><router-link to="/ViewAccounts" style="color: black">Accounts</router-link></b-navbar-brand>
           </b-navbar-nav>
 
           <!-- Right aligned nav items -->
@@ -49,25 +50,16 @@
 
   Vue.use(BootstrapVue);
     export default {
-        name: "NavBar"
+        name: "NavBar",
+      methods:{
+          searchForAccount(id){
+
+          }
+      }
     }
 </script>
 
 <style scoped>
-
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-  }
-
-  #__BVID__6:focus, .navbar-nav.ml-auto, .form-inline{
-    width: 80% !important;
-    float: right !important;
-  }
 
   #__BVID__6:hover{
     width: 80% !important;
@@ -87,11 +79,10 @@
     text-decoration: none !important;
   }
 
-  .navbar-dark .navbar-nav .nav-link_{
-    color: rgba(0, 0, 0, 0.5) !important;
+  li[id*="BVID"] {
+    background-color: #ffa500bd !important;
+    margin-left: 50px;
+    font-weight: bold;
   }
 
-  #__BVID__10__BV_button_{
-    color: rgba(0, 0, 0, 0.5) !important;
-  }
 </style>

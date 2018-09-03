@@ -1,5 +1,8 @@
 <template>
     <div>
+      <b-modal id="insert">
+        <InsertAccount></InsertAccount>
+      </b-modal>
       <NavBar></NavBar>
       <div style="width:70%; margin: auto; margin-top: 100px">
         <table class="table">
@@ -14,26 +17,22 @@
           </tr>
           </thead>
           <tbody>
-          <tr v-for="account in Accounts">
+          <!--<tr v-for="(account, index) in Accounts" v-bind:index="index">-->
+            <tr  v-for="(account, index) in Accounts">
             <th>{{account.id}}</th>
             <th>{{account.firstName}}</th>
             <th>{{account.secondName}}</th>
             <th>{{account.accountNumber}}</th>
             <th>
-              <b-btn v-b-modal.update type="button" @click="updateAccount(account, account.id, account.firstName)" class="icon view"></b-btn>
+              <b-btn v-b-modal.update type="button" @click="updateAccount(account, account.id, index)" class="icon view"></b-btn>
             </th>
-            <th><b-btn v-b-modal.delete type="button" @click="deleteAccount(account, account.id, account.firstName)" class="icon delete"></b-btn></th>
+            <th><b-btn v-b-modal.delete type="button" @click="deleteAccount(account, account.id, index)" class="icon delete"></b-btn></th>
             <!--<th><button type="button" @click="deleteAccount(account, account.id, account.firstName)" class="icon delete" data-toggle="modal" data-target=".bd-example-modal-sm"></button></th>-->
           </tr>
           </tbody>
         </table>
       </div>
       <div>
-
-        <b-modal id="modal1" title="Bootstrap-Vue" ok-only ok-variant="danger" ok-title="Cancel">
-          <p class="my-4">Hello from modal!</p>
-        </b-modal>
-
 
         <!-- Modal Component -->
         <b-modal id="update"  title="Update Account" ok-only ok-title="Cancel" cancel-variant="danger" >
@@ -56,7 +55,7 @@
         </b-modal>
 
         <!-- Modal Component -->
-        <b-modal id="delete" title="Are you sure?" ok-only ok-title="Cancel">
+        <b-modal id="delete" ref="test" title="Are you sure?" ok-only ok-title="Cancel">
           <label>Are you sure you want to delete this account?</label>
           <div>
             <b-btn @click="confirmDelete" style="background-color: red; border: none;">Complete Deletion</b-btn>
@@ -65,11 +64,7 @@
 
       </div>
 
-
-
-
-
-
+      <b-btn v-b-modal.insert id="addBtn">+</b-btn>
 
     </div>
 </template>
@@ -81,21 +76,26 @@
   import 'bootstrap/dist/css/bootstrap.css';
   import 'bootstrap-vue/dist/bootstrap-vue.css';
   import NavBar from './NavBar.vue'
-  Vue.use(BootstrapVue);
+  import InsertAccount from './InsertAccount.vue'
   import axios from 'axios';
+  Vue.use(BootstrapVue);
+  import JQuery from 'jquery'
+  let $ = JQuery
     export default {
         name: "ViewAccounts",
       data() {
           return {
             test: null,
             isHidden: current.hidden,
+            pageNumber: 0,
             Accounts: [],
             Account: [],
             AccountToUpdate: { id: '', firstName: '', secondName: '', accountNumber: '' }
           }
       },
       components: {
-        NavBar
+        NavBar,
+        InsertAccount
       },
       methods:{
         updateAccount(Accounts, id, name) {
@@ -124,13 +124,14 @@
               console.log(error);
             });
         },
-        deleteAccount(Accounts, id, name) {
+        deleteAccount(Accounts, id, index) {
           current.id = id;
+          current.index = index;
         },
         confirmDelete(){
+          this.$refs.test.hide();
           axios.delete('http://localhost:8080/account/delete/' + current.id)
-            .then(response => this.Account.splice(index, 1));
-          window.location.reload();
+            .then(response => this.Accounts.splice(current.index, 1));
         }
       },
       mounted(){
@@ -154,7 +155,7 @@
       lastName: null,
       surName: null,
       accountNumber: null,
-
+      index: null,
     }
   })
 
@@ -238,6 +239,26 @@
     margin: 0px 0px 10px !important;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+  }
+#addBtn {
+  height: 56px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: orange;
+  transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  border-radius: 50%;
+  width: 56px;
+  border: none;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 35px;
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2), 0px 6px 10px 0px rgba(0,0,0,0.14), 0px 1px 18px 0px rgba(0,0,0,0.12);
+  }
+
+  #addBtn:hover{
+    background-color: #ffce73;
   }
 
 </style>

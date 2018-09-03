@@ -7,7 +7,7 @@
     <NavBar></NavBar>
       <div style="margin-top: 50px; width: 90%; margin: auto;">
         <router-link to="/ViewAccounts"><button class="icon view" > <span class="span">View Accounts</span></button></router-link>
-        <router-link to="/InsertAccount"><button class="icon add" > <span class="span">Insert Account</span></button></router-link>
+        <router-link to="/AddAccount"><button class="icon add" > <span class="span">Add  Account</span></button></router-link>
       </div>
     </div>
   </div>
@@ -26,20 +26,21 @@
 <style scoped>
 
 .icon{
-  background-color: rgba(255, 255, 255, 0.5);
   width: 40%;
-  height: 300px;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 50%;
   float: left;
   margin-left: 5%;
   margin-top: 5%;
   border: none;
+  height: 300px;
 }
 
 .icon:hover{
   background-color: white;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1);
 }
 
 .icon.view{
@@ -106,4 +107,9 @@
   background-color: red;
 }
 
+
+.icon:hover .span {
+  transition: .5s ease;
+  background-color: red;
+}
 </style>
