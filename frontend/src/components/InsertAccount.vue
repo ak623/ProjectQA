@@ -10,10 +10,6 @@
         <h4 style="text-align: center;
     color: orange;"> Add Account</h4>
         <div class="form-group">
-          <label class="pull-left"> ID </label>
-          <input type="text" class="form-control" placeholder="ID" v-model="Account.id">
-        </div>
-        <div class="form-group">
           <label class="pull-left"> First Name </label>
           <input type="text" class="form-control" placeholder="First Name" v-model="Account.firstName">
         </div>
@@ -50,7 +46,7 @@
     },
     data() {
       return {
-        Account: { id: '', firstName: '', secondName: '', accountNumber: '' },
+        Account: {  firstName: '', secondName: '', accountNumber: '' },
         errors: [],
       }
     }, methods: {
@@ -66,13 +62,9 @@
         if (!this.Account.accountNumber) {
           this.errors.push('Account Number required.');
         }
-        if (!this.Account.id) {
-          this.errors.push('ID required.');
-        }
 
-        if (this.Account.firstName && this.Account.id && this.Account.secondName && this.Account.accountNumber){
+        if (this.Account.firstName && this.Account.secondName && this.Account.accountNumber){
           let newAccount = {
-            id: this.Account.id,
             firstName: this.Account.firstName,
             secondName: this.Account.secondName,
             accountNumber: this.Account.accountNumber

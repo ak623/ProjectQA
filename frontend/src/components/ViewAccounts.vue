@@ -19,7 +19,7 @@
           <tbody>
           <!--<tr v-for="(account, index) in Accounts" v-bind:index="index">-->
             <tr  v-for="(account, index) in Accounts">
-            <th>{{account.id}}</th>
+            <th>{{index}}</th>
             <th>{{account.firstName}}</th>
             <th>{{account.secondName}}</th>
             <th>{{account.accountNumber}}</th>
@@ -241,14 +241,13 @@
     box-sizing: border-box;
   }
 #addBtn {
-  height: 56px;
   position: absolute;
   right: 0;
   bottom: 0;
   background-color: orange;
   transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
   border-radius: 50%;
-  width: 56px;
+  width: 66px;
   border: none;
   margin-right: 20px;
   margin-bottom: 20px;

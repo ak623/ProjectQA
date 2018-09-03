@@ -4,22 +4,15 @@
     <bookmark url="file://$PROJECT_DIR$/frontend/src/components/ViewAccounts.vue" line="32" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47bd9749-4f5a-4dca-a5be-036915116491" name="Default" comment="Completed">
+    <list default="true" id="47bd9749-4f5a-4dca-a5be-036915116491" name="Default" comment="Updated code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/qa/backend/model/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/qa/backend/model/Account.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/Add.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/Add.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/ViewAll.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/ViewAll.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/assets/backGrounnd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/assets/backGrounnd.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/AccountController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/model/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/repository/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/repository/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/qa/backend/controller/AccountController.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/qa/backend/controller/AccountController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/classes/com/qa/backend/repository/AccountRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/classes/com/qa/backend/repository/AccountRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/InsertAccount.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/InsertAccount.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/NavBar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/NavBar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/UpdateAccount.vue" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/components/ViewAccounts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/ViewAccounts.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/test.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,33 +33,34 @@
     <session id="-1197767377">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="270" />
+          <entry key="java" value="349" />
           <entry key="js" value="243" />
           <entry key="properties" value="15" />
-          <entry key="txt" value="34" />
-          <entry key="vue" value="5971" />
+          <entry key="txt" value="46" />
+          <entry key="vue" value="5988" />
           <entry key="xml" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="270" />
+          <entry key="JAVA" value="349" />
           <entry key="JavaScript" value="243" />
-          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="PLAIN_TEXT" value="46" />
           <entry key="Properties" value="15" />
-          <entry key="Vue.js" value="5971" />
+          <entry key="Vue.js" value="5988" />
           <entry key="XML" value="29" />
         </counts>
       </usages-collector>
@@ -74,7 +68,7 @@
         <counts>
           <entry key="0-SNAPSHOT" value="1" />
           <entry key="html" value="2" />
-          <entry key="java" value="18" />
+          <entry key="java" value="19" />
           <entry key="js" value="13" />
           <entry key="properties" value="2" />
           <entry key="rnc" value="1" />
@@ -86,7 +80,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="JAVA" value="18" />
+          <entry key="JAVA" value="19" />
           <entry key="JavaScript" value="13" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Properties" value="2" />
@@ -109,8 +103,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            <state relative-caret-position="-1266">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -118,11 +112,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/ViewAccounts.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            <state relative-caret-position="187">
+              <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#3107#3129#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -131,11 +124,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/components/InsertAccount.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="144" column="19" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
+            <state relative-caret-position="782">
+              <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-                <element signature="e#1360#1386#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,13 +136,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/model/Account.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            <state relative-caret-position="391">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/repository/AccountRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="9" column="41" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -158,8 +157,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+            <state relative-caret-position="188">
+              <caret line="34" column="65" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,7 +170,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/src/components/NavBar.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="n#style#0;n#b-navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#b-navbar-nav#0;n#b-collapse#0;n#b-navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -195,8 +194,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>info</find>
-      <find>test</find>
       <find>#app</find>
       <find>submit</find>
       <find>user</find>
@@ -223,8 +220,10 @@
       <find>inser</find>
       <find>search</find>
       <find>acco</find>
-      <find>addbtn</find>
       <find>home</find>
+      <find>addbtn</find>
+      <find>UPDA</find>
+      <find>String</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -260,12 +259,13 @@
         <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/CustomSequences.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/Counter.java" />
         <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/CounterService.java" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/model/Account.java" />
         <option value="$PROJECT_DIR$/frontend/src/components/Home.vue" />
         <option value="$PROJECT_DIR$/frontend/src/components/NavBar.vue" />
-        <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/AccountController.java" />
-        <option value="$PROJECT_DIR$/frontend/src/components/InsertAccount.vue" />
         <option value="$PROJECT_DIR$/frontend/src/components/ViewAccounts.vue" />
+        <option value="$PROJECT_DIR$/frontend/src/components/InsertAccount.vue" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/model/Account.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/repository/AccountRepository.java" />
+        <option value="$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/AccountController.java" />
       </list>
     </option>
   </component>
@@ -807,8 +807,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
     <option name="width" value="3855" />
     <option name="height" value="2075" />
   </component>
@@ -820,6 +820,7 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -940,13 +941,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535966417538" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535968292591" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/spring-boot-vuejs-master" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -1048,7 +1048,8 @@
       <workItem from="1535728756929" duration="19250000" />
       <workItem from="1535756104369" duration="9166000" />
       <workItem from="1535800518623" duration="46425000" />
-      <workItem from="1535885499477" duration="31382000" />
+      <workItem from="1535885499477" duration="31861000" />
+      <workItem from="1535968349997" duration="2979000" />
     </task>
     <task id="LOCAL-00001" summary="This version is working">
       <created>1535812097813</created>
@@ -1071,17 +1072,24 @@
       <option name="project" value="LOCAL" />
       <updated>1535896565238</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated code">
+      <created>1535966986967</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535966986967</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113507000" />
+    <option name="totallyTimeSpent" value="116965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18578136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18846412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1196,7 +1204,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="This version is working" />
     <MESSAGE value="Completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed" />
+    <MESSAGE value="Updated code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated code" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1287,13 +1296,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/test.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/test.vue" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1315,27 +1318,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/UpdateAccount.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/UpdateAccount.vue" />
     <entry file="file://$PROJECT_DIR$/frontend/src/components/AddAccount.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding>
-            <element signature="e#146#179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/repository/AccountRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="58" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1343,9 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1353,9 +1337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#96#118#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1369,66 +1350,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/NextSequenceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/CustomSequences.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/Counter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#433#434#0" expanded="true" />
-            <element signature="e#468#469#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/CounterService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/NextSequenceService.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/CustomSequences.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/Counter.java" />
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/CounterService.java" />
     <entry file="file://$PROJECT_DIR$/frontend/src/components/NavBar.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="n#style#0;n#b-navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#b-navbar-nav#0;n#b-collapse#0;n#b-navbar#0;n#div#0;n#template#0;n#!!top" expanded="true" />
@@ -1439,51 +1368,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/Home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1266">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/components/ViewAccounts.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/components/InsertAccount.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="144" column="19" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
+        <state relative-caret-position="782">
+          <caret line="48" column="20" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#1360#1386#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/model/Account.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="391">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/ViewAccounts.vue">
+    <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/repository/AccountRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="e#3107#3129#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/components/Home.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        <state relative-caret-position="119">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/src/main/java/com/qa/backend/controller/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="36" />
+        <state relative-caret-position="188">
+          <caret line="34" column="65" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

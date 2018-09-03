@@ -31,7 +31,7 @@ public class AccountController {
 
     //Read
     @RequestMapping(value = "/accountId/{id}")
-    public Account read(@PathVariable Integer id){
+    public Account read(@PathVariable String id){
         Optional<Account> optAccount = accountRepository.findById(id);
         if (optAccount.isPresent()) {
             return optAccount.get();
@@ -53,7 +53,7 @@ public class AccountController {
 
     //Delete
     @RequestMapping(value = "delete/{id}", method = RequestMethod.DELETE)
-    public void delete(@PathVariable int id){
+    public void delete(@PathVariable String id){
         accountRepository.deleteById(id);
     }
 
